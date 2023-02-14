@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="rounded-2 container p-1 text-light bg-secondary mt-2">
+      <div class="container">
+        <form>
+          <fieldset>
+            <legend>regester</legend>
+            <div>
+              <label class="form-label" for="fname">first name</label>
+              <input class="form-control " id="fname" type="text" />
+            </div>
+            <div>
+              <label class="form-label" for="lname">lastname</label>
+              <input class="form-control" id="lname" type="text" />
+            </div>
+            <input class="btn btn-primary mt-3 w-25 " id="addbtn" type="submit" value="Add" />
+          </fieldset>
+        </form>
+      </div>
+      <hr />
+      <div class="container border-1">
+        <div class="row ms-1 gap-3">
+        <button class="btn  w-25 btn-danger mb-3" id="g-delete">Delete</button>
+        <button class="btn w-25  bg-success mb-3" id="g-showDone">showDone</button>
+        <button class="btn w-25  bg-info mb-3" id="g-showAll">showAll</button></div>
+          <table class="table table-hover table-striped table-dark text-center w-100 ">
+            <thead>
+            <tr>
+              <th>
+                <input class="form-check-input" id="checkAll" type="checkbox" />
+              </th>
+              <th>first name</th>
+              <th>last name</th>
+              <th>operations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr id="1676012059758">
+
+              <td><input class="form-check-input" type="checkbox"></td>
+              
+              <td>aa</td>
+              
+              <td> aa</td>
+              
+              <td><div class="btn-group"><button id="btn-del" class="btn btn-danger btn-del">Delete</button><button id="btn-ed" class="btn btn-success btn-del">Edit</button></div></td>
+              
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+      
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
